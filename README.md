@@ -2,11 +2,11 @@
 Send mail in Laravel using Amazon AWS SES
 
 
-.env
+.env <br/>
 altere os campos MAIL_HOST, MAIL_USERNAME, MAIL_PASSWORD
 
-config/services.php
-altere o seguinte array com seus dados de credenciais
+<br/>config/services.php<br/>
+altere o seguinte array com seus dados de credenciais<br/>
 
 'ses' => [
         'key' => env('SMTP USERNAME'),
@@ -14,8 +14,8 @@ altere o seguinte array com seus dados de credenciais
         'region' => 'us-east-1',
     ],
     
-config/mail.php
-altere o array abaixo com dados do email global que irá fazer os envios
+<br/>config/mail.php<br/>
+altere o array abaixo com dados do email global que irá fazer os envios<br/>
 
   'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
@@ -23,5 +23,5 @@ altere o array abaixo com dados do email global que irá fazer os envios
     ],
     
     
-App\Http\Controllers\EmailController.php
+<br/> App\Http\Controllers\EmailController.php <br/>
 Responsavel por realizar o envio
